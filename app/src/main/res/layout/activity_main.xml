@@ -20,23 +20,26 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="10dp"
-            android:ems="10"
+            android:textSize="25sp"
             android:inputType="textPersonName"
             android:text="Palette" />
 
-        <!-- Button to exit palette editor -->
-        <Button
+        <!-- Image Button to exit palette editor -->
+        <ImageButton
             android:id="@+id/ExitPaletteEditor"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginEnd="10dp"
-            android:text="X" />
+            android:paddingHorizontal="10dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
     </LinearLayout>
 
     <!-- Vertical scroll container with the photo and colors -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,18 +52,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Grid View" />
+                android:text="Grid View"
+                android:paddingHorizontal="10dp"
+                android:drawableStart="@drawable/baseline_grid_view_24"
+                android:drawablePadding="5dp" />
 
             <!-- Picture the palette was created from -->
             <ImageView
                 android:id="@+id/PictureForPalette"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginHorizontal="10dp"
-                android:layout_weight="1"
+                android:paddingVertical="5dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/baseline_grid_view_24" />
 
             <!-- Color Palette -->
             <LinearLayout
@@ -76,6 +83,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:adjustViewBounds="true"
                     app:srcCompat="@android:drawable/ic_menu_gallery" />
 
                 <!-- Color 2 -->
@@ -84,6 +92,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:adjustViewBounds="true"
                     app:srcCompat="@android:drawable/ic_menu_gallery" />
 
                 <!-- Color 3 -->
@@ -92,6 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:adjustViewBounds="true"
                     app:srcCompat="@android:drawable/ic_menu_gallery" />
 
                 <!-- Color 4 -->
@@ -100,6 +110,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:adjustViewBounds="true"
                     app:srcCompat="@android:drawable/ic_menu_gallery" />
             </LinearLayout>
         </LinearLayout>
@@ -111,7 +122,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:textSize="15sp"
+        android:paddingVertical="5dp"
+        android:textSize="20sp"
+        android:textColor="#181818"
+        android:textStyle="bold"
         android:text="Tools" />
 
     <!-- Toolbox buttons -->
@@ -126,31 +140,49 @@
         <!-- Add color -->
         <Button
             android:id="@+id/AddColor"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@null"
+            android:paddingVertical="15dp"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_baseline_add_circle_outline_24"
+            android:drawableTint="#181818"
             android:textAllCaps="false"
-            android:drawableTop="@drawable/ic_launcher_foreground"
+            android:textSize="18sp"
+            android:textColor="#181818"
             android:text="Add Color" />
 
         <!-- Accessibiility -->
         <Button
             android:id="@+id/Accessibility"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@null"
+            android:paddingVertical="15dp"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_outline_remove_red_eye_24"
+            android:drawableTint="#181818"
             android:textAllCaps="false"
-            android:drawableTop="@drawable/ic_launcher_foreground"
+            android:textSize="18sp"
+            android:textColor="#181818"
             android:text="Accessibility" />
 
         <!-- Export -->
         <Button
             android:id="@+id/Export"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@null"
+            android:paddingVertical="15dp"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_baseline_share_24"
+            android:drawableTint="#181818"
             android:textAllCaps="false"
-            android:drawableTop="@drawable/ic_launcher_foreground"
+            android:textSize="18sp"
+            android:textColor="#181818"
             android:text="Export" />
     </LinearLayout>
 </LinearLayout>
