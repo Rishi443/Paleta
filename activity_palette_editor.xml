@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top" >
+
+    <!-- Top section containing palette name and exit button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" >
+
+        <!-- Plain Text for the palette name -->
+        <EditText
+            android:id="@+id/PaletteName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:textSize="25sp"
+            android:inputType="textPersonName"
+            android:text="Palette" />
+
+        <!-- Image Button to exit palette editor -->
+        <ImageButton
+            android:id="@+id/ExitPaletteEditor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:paddingHorizontal="10dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+    </LinearLayout>
+
+    <!-- Vertical scroll container with the photo and colors -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Button to switch from grid to list view -->
+            <Button
+                android:id="@+id/GridView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Grid View"
+                android:paddingHorizontal="10dp"
+                android:drawableStart="@drawable/baseline_grid_view_24"
+                android:drawablePadding="5dp" />
+
+            <!-- Picture the palette was created from -->
+            <ImageView
+                android:id="@+id/PictureForPalette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_grid_view_24" />
+
+            <!-- Color Palette - first row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="start" >
+
+                <!-- Color 1 -->
+                <Button
+                    android:id="@+id/Color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"/>
+
+                <!-- Color 2 -->
+                <Button
+                    android:id="@+id/Color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF" />
+
+                <!-- Color 3 -->
+                <Button
+                    android:id="@+id/Color3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"/>
+
+                <!-- Color 4 -->
+                <Button
+                    android:id="@+id/Color4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- Color Palette - second row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="start" >
+
+                <!-- Color 5 -->
+                <Button
+                    android:id="@+id/Color5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"/>
+
+                <!-- Color 6 -->
+                <Button
+                    android:id="@+id/Color6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF" />
+
+                <!-- Color 7 -->
+                <Button
+                    android:id="@+id/Color7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"/>
+
+                <!-- Color 8 -->
+                <Button
+                    android:id="@+id/Color8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Tools -->
+    <TextView
+        android:id="@+id/Tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:textSize="20sp"
+        android:textColor="#181818"
+        android:textStyle="bold"
+        android:text="Tools" />
+
+    <!-- Toolbox buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <!-- Add color -->
+        <Button
+            android:id="@+id/AddColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingVertical="15dp"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_baseline_add_circle_outline_24"
+            android:drawableTint="#181818"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#181818"
+            android:text="Add Color" />
+
+        <!-- Accessibiility -->
+        <Button
+            android:id="@+id/Accessibility"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingVertical="15dp"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_outline_remove_red_eye_24"
+            android:drawableTint="#181818"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#181818"
+            android:text="Accessibility" />
+
+        <!-- Export -->
+        <Button
+            android:id="@+id/Export"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingVertical="15dp"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_baseline_share_24"
+            android:drawableTint="#181818"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#181818"
+            android:text="Export" />
+    </LinearLayout>
+</LinearLayout>
