@@ -1,4 +1,4 @@
-?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -71,6 +71,14 @@
                 android:src="@drawable/baseline_grid_view_24" />
 
             <!-- Color Palette - first row-->
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,38 +88,44 @@
                 android:gravity="start" >
 
                 <!-- Color 1 -->
-                <Button
+                <ImageButton
                     android:id="@+id/Color1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:background="#FFFFFF"/>
+                    app:srcCompat="?attr/selectableItemBackground" />
 
                 <!-- Color 2 -->
-                <Button
+
+                <ImageButton
                     android:id="@+id/Color2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:background="#FFFFFF" />
+                    android:layout_marginHorizontal="5dp"
+                    app:srcCompat="?attr/selectableItemBackground" />
 
                 <!-- Color 3 -->
-                <Button
+                <ImageButton
                     android:id="@+id/Color3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
                     android:layout_marginEnd="5dp"
-                    android:background="#FFFFFF"/>
+                    app:srcCompat="?attr/selectableItemBackground" />
+
 
                 <!-- Color 4 -->
-                <Button
+                <ImageButton
                     android:id="@+id/Color4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:background="#FFFFFF"/>
+                    app:srcCompat="?attr/selectableItemBackground" />
+
+
+
+
             </LinearLayout>
 
             <!-- Color Palette - second row -->
@@ -123,39 +137,42 @@
                 android:layout_marginBottom="5dp">
 
                 <!-- Color 5 -->
-                <Button
+                <ImageButton
                     android:id="@+id/Color5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:background="#FFFFFF"/>
+                    app:srcCompat="?attr/selectableItemBackground" />
 
                 <!-- Color 6 -->
-                <Button
+
+                <ImageButton
                     android:id="@+id/Color6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="5dp"
-                    android:background="#FFFFFF" />
+                    app:srcCompat="?attr/selectableItemBackground" />
 
                 <!-- Color 7 -->
-                <Button
+                <ImageButton
                     android:id="@+id/Color7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
                     android:layout_marginEnd="5dp"
-                    android:background="#FFFFFF"/>
+                    app:srcCompat="?attr/selectableItemBackground" />
+
 
                 <!-- Color 8 -->
-                <Button
+                <ImageButton
                     android:id="@+id/Color8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:background="#FFFFFF"/>
+                    app:srcCompat="?attr/selectableItemBackground" />
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
