@@ -98,6 +98,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="5dp"
         android:gravity="start" >
 
         <!-- Favorite Color 1 -->
@@ -114,6 +115,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginHorizontal="3dp"
             android:background="#FFFFFF" />
 
         <!-- Favorite Color 3 -->
@@ -130,6 +132,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginHorizontal="3dp"
             android:background="#FFFFFF"/>
 
         <!-- Favorite Color 5 -->
@@ -146,6 +149,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginHorizontal="3dp"
             android:background="#FFFFFF"/>
 
         <!-- Favorite Color 7 -->
@@ -163,6 +167,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="5dp"
         android:gravity="start" >
 
         <!-- Favorite Color 8 -->
@@ -179,6 +184,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginHorizontal="3dp"
             android:background="#FFFFFF" />
 
         <!-- Favorite Color 10 -->
@@ -195,6 +201,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginHorizontal="3dp"
             android:background="#FFFFFF"/>
 
         <!-- Favorite Color 12 -->
@@ -211,6 +218,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginHorizontal="3dp"
             android:background="#FFFFFF"/>
 
         <!-- Favorite Color 14 -->
