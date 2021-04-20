@@ -12,21 +12,41 @@ public class OurPalette {
     Date createdDate;
     Date lastModified;
     List<Palette.Swatch> allSwatches = new ArrayList<>(16);
-    List<Palette.Swatch> savedSwatches = new ArrayList<>(16);
+    List<Integer> savedSwatches = new ArrayList<>(16);
+    ArrayList<Integer> allColors = new ArrayList<>();
 
     public OurPalette(Palette palette){
         allSwatches = palette.getSwatches();
-        savedSwatches.add(allSwatches.get(0));
-        savedSwatches.add(allSwatches.get(3));
-        savedSwatches.add(allSwatches.get(7));
-        savedSwatches.add(allSwatches.get(11));
+        savedSwatches.add(palette.getDominantColor(1));
+        savedSwatches.add(palette.getLightVibrantColor(1));
+        savedSwatches.add(palette.getVibrantColor(1));
+        savedSwatches.add(palette.getMutedColor(1));
 
+        allColors.add(palette.getDominantColor(1));
+        allColors.add(palette.getLightVibrantColor(1));
+        allColors.add(palette.getVibrantColor(1));
+        allColors.add(palette.getMutedColor(1));
+
+        allColors.add(palette.getMutedColor(15));
+        allColors.add(palette.getVibrantColor(15));
+        allColors.add(palette.getLightVibrantColor(15));
+        allColors.add(palette.getDominantColor(15));
+        allColors.add(palette.getDarkMutedColor(2));
+        allColors.add(palette.getLightMutedColor(2));
 
     }
 
-    public void addColor(Palette.Swatch color){
+    public void addColor(Integer color){
         savedSwatches.add(color);
 
+    }
+
+    public ArrayList<Integer> getAllColors(){return allColors;}
+    public Integer getAnAllColor(int number){
+        return allColors.get(number);
+    }
+    public Integer getSavedColor(int number){
+        return savedSwatches.get(number);
     }
 
     public void changeName(String newName){
