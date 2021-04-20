@@ -76,6 +76,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="5dp"
                 android:gravity="start" >
 
                 <!-- Color 1 -->
@@ -91,6 +92,7 @@
                     android:id="@+id/Color2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="1"
                     android:background="#FFFFFF" />
 
@@ -100,6 +102,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
                     android:background="#FFFFFF"/>
 
                 <!-- Color 4 -->
@@ -117,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginHorizontal="10dp"
-                android:gravity="start" >
+                android:layout_marginBottom="5dp">
 
                 <!-- Color 5 -->
                 <Button
@@ -133,6 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
                     android:background="#FFFFFF" />
 
                 <!-- Color 7 -->
@@ -141,6 +145,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
                     android:background="#FFFFFF"/>
 
                 <!-- Color 8 -->
