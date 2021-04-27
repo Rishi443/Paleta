@@ -18,55 +18,13 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-<!--    <com.google.android.material.tabs.TabLayout-->  //tab layout
-<!--        android:id = "@+id/tab"-->
-<!--        android:layout_below = "@id/title"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:tabIconTint="#000000"-->
-<!--        app:tabIndicatorColor="#000000"-->
-<!--        app:tabTextColor="#000000">-->
-
-<!--        <com.google.android.material.tabs.TabItem-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Palettes" />-->
-
-<!--        <com.google.android.material.tabs.TabItem-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Favorites" />-->
-
-<!--    </com.google.android.material.tabs.TabLayout>-->
-
-<!--    <LinearLayout-->  //tab alternative -- just buttons
-<!--        android:layout_width="fill_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="horizontal">-->
-
-<!--    <Button-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="1"-->
-<!--        android:text="Palettes"-->
-<!--        android:textColor="@color/black"-->
-<!--        app:backgroundTint="@color/white" />-->
-
-<!--    <Button-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="1"-->
-<!--        android:text="Favorites"-->
-<!--        android:textColor="@color/black"-->
-<!--        app:backgroundTint="@color/white" />-->
-
-<!--    </LinearLayout>-->
 
     <androidx.core.widget.NestedScrollView
         android:layout_below="@+id/title"
         android:layout_width="wrap_content"
         android:paddingBottom="0dp"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@id/create">
 
         <LinearLayout
             android:id="@+id/LL_A"
@@ -99,28 +57,28 @@
                      android:id = "@+id/p1c1"
                      android:layout_width="100dp"
                      android:layout_height="100dp"
-                     android:background="#FFFFFF"
+                     android:background="#9E310F"
                      android:gravity="center" />
 
                  <ImageView
                      android:id = "@+id/p1c2"
                      android:layout_width="100dp"
                      android:layout_height="100dp"
-                     android:background="#FFFFFF"
+                     android:background="#4758B1"
                      android:gravity="center" />
 
                  <ImageView
                      android:id = "@+id/p1c3"
                      android:layout_width="100dp"
                      android:layout_height="100dp"
-                     android:background="#FFFFFF"
+                     android:background="#D6B654"
                      android:gravity="center" />
 
                  <ImageView
                      android:id = "@+id/p1c4"
                      android:layout_width="100dp"
                      android:layout_height="100dp"
-                     android:background="#FFFFFF"
+                     android:background="#C68B32"
                      android:gravity="center" />
 
                  <ImageView
@@ -179,28 +137,28 @@
                     android:id = "@+id/p2c1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#009688"
                     android:gravity="center" />
 
                 <ImageView
                     android:id = "@+id/p2c2"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#09423C"
                     android:gravity="center" />
 
                 <ImageView
                     android:id = "@+id/p2c3"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#88C6C1"
                     android:gravity="center" />
 
                 <ImageView
                     android:id = "@+id/p2c4"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#4D6E6A"
                     android:gravity="center" />
 
                 <ImageView
@@ -258,28 +216,28 @@
                     android:id = "@+id/p3c1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#45365E"
                     android:gravity="center" />
 
                 <ImageView
                     android:id = "@+id/p3c2"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#44204A"
                     android:gravity="center" />
 
                 <ImageView
                     android:id = "@+id/p3c3"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#752D45"
                     android:gravity="center" />
 
                 <ImageView
                     android:id = "@+id/p3c4"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#93445F"
                     android:gravity="center" />
 
                 <ImageView
@@ -337,28 +295,28 @@
                     android:id = "@+id/p4c1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#AE8610"
                     android:gravity="center" />
 
                 <ImageView
                     android:id = "@+id/p4c2"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#4F8016"
                     android:gravity="center" />
 
                 <ImageView
                     android:id = "@+id/p4c3"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#7A9857"
                     android:gravity="center" />
 
                 <ImageView
                     android:id = "@+id/p4c4"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="#FFFFFF"
+                    android:background="#AE9D0F"
                     android:gravity="center" />
 
                 <ImageView
@@ -476,6 +434,7 @@
     </androidx.core.widget.NestedScrollView>
 
     <Button
+        android:id="@+id/create"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center_vertical|center_horizontal"
