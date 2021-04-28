@@ -24,6 +24,17 @@
             android:textSize="25sp"
             android:inputType="textPersonName"
             android:text="Palette" />
+        
+        <!-- Button to save palette -->
+
+        <Button
+            android:id="@+id/SavePaletteEditor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="10dp"
+            android:backgroundTint="@color/white"
+            android:text="save"
+            android:textColor="@color/black"/>
 
         <!-- Image Button to exit palette editor -->
         <ImageButton
