@@ -24,9 +24,8 @@
             android:textSize="25sp"
             android:inputType="textPersonName"
             android:text="Palette" />
-        
-        <!-- Button to save palette -->
 
+        <!-- Button to save palette -->
         <Button
             android:id="@+id/SavePaletteEditor"
             android:layout_width="wrap_content"
@@ -58,17 +57,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <!-- Button to switch from grid to list view -->
-            <Button
-                android:id="@+id/GridView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="Grid View"
-                android:paddingHorizontal="10dp"
-                android:drawableStart="@drawable/baseline_grid_view_24"
-                android:drawablePadding="5dp" />
-
             <!-- Picture the palette was created from -->
             <ImageView
                 android:id="@+id/PictureForPalette"
@@ -82,20 +70,12 @@
                 android:src="@drawable/baseline_grid_view_24" />
 
             <!-- Color Palette - first row-->
-            <EditText
-                android:id="@+id/editTextTextPersonName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginHorizontal="10dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginVertical="5dp"
                 android:gravity="start" >
 
                 <!-- Color 1 -->
@@ -107,7 +87,6 @@
                     app:srcCompat="?attr/selectableItemBackground" />
 
                 <!-- Color 2 -->
-
                 <ImageButton
                     android:id="@+id/Color2"
                     android:layout_width="25dp"
@@ -125,7 +104,6 @@
                     android:layout_marginEnd="5dp"
                     app:srcCompat="?attr/selectableItemBackground" />
 
-
                 <!-- Color 4 -->
                 <ImageButton
                     android:id="@+id/Color4"
@@ -133,9 +111,6 @@
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     app:srcCompat="?attr/selectableItemBackground" />
-
-
-
 
             </LinearLayout>
 
@@ -156,7 +131,6 @@
                     app:srcCompat="?attr/selectableItemBackground" />
 
                 <!-- Color 6 -->
-
                 <ImageButton
                     android:id="@+id/Color6"
                     android:layout_width="25dp"
@@ -174,7 +148,6 @@
                     android:layout_marginEnd="5dp"
                     app:srcCompat="?attr/selectableItemBackground" />
 
-
                 <!-- Color 8 -->
                 <ImageButton
                     android:id="@+id/Color8"
@@ -183,7 +156,6 @@
                     android:layout_weight="1"
                     app:srcCompat="?attr/selectableItemBackground" />
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 
@@ -211,14 +183,13 @@
         <!-- Add color -->
         <Button
             android:id="@+id/AddColor"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:background="@null"
             android:paddingVertical="15dp"
             android:drawablePadding="4dp"
             android:drawableTop="@drawable/ic_baseline_add_circle_outline_24"
-            android:drawableTint="#181818"
+            app:backgroundTint="#FFFFFF"
             android:textAllCaps="false"
             android:textSize="18sp"
             android:textColor="#181818"
@@ -227,14 +198,13 @@
         <!-- Accessibiility -->
         <Button
             android:id="@+id/Accessibility"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:background="@null"
             android:paddingVertical="15dp"
             android:drawablePadding="4dp"
             android:drawableTop="@drawable/ic_outline_remove_red_eye_24"
-            android:drawableTint="#181818"
+            app:backgroundTint="#FFFFFF"
             android:textAllCaps="false"
             android:textSize="18sp"
             android:textColor="#181818"
@@ -243,16 +213,16 @@
         <!-- Export -->
         <Button
             android:id="@+id/Export"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@null"
             android:paddingVertical="15dp"
             android:drawablePadding="4dp"
             android:drawableTop="@drawable/ic_baseline_share_24"
-            android:drawableTint="#181818"
             android:textAllCaps="false"
             android:textSize="18sp"
+            app:backgroundTint="#FFFFFF"
             android:textColor="#181818"
             android:text="Export" />
     </LinearLayout>
