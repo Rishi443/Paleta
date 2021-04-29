@@ -48,6 +48,27 @@ public final class ContrastChecker {
     }
 
     
+    public static String getConstrastRatio_new(final Color fgColor, final Color bgColor) {
+        double fgLuminosity = getLuminosity(fgColor);
+        double bgLuminosity = getLuminosity(bgColor);
+        if (fgLuminosity > bgLuminosity) {
+                double a = computeContrast(fgLuminosity, bgLuminosity);
+                String ratio_part_1 = Double.toString(a);
+                String ratio_part_2 = ":";
+                String ratio_part_3 = "1";
+                String ratio = ratio_part_1+ratio_part_2+ratio_part_3;
+                return ratio;
+
+        } else {
+                double a = computeContrast(bgLuminosity, fgLuminosity);
+                String ratio_part_1 = Double.toString(a);
+                String ratio_part_2 = ":";
+                String ratio_part_3 = "1";
+                String ratio = ratio_part_1+ratio_part_2+ratio_part_3;
+                return ratio;
+        }
+    }
+
     public static double getConstrastRatio(final Color fgColor, final Color bgColor) {
         double fgLuminosity = getLuminosity(fgColor);
         double bgLuminosity = getLuminosity(bgColor);
